@@ -161,6 +161,21 @@ ol {
   color: #fff;
 }
 
+.search-form__textfield:active {
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+
 .result {
   display: flex;
   flex-direction: column;

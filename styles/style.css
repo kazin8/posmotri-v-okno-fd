@@ -26,6 +26,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -60,15 +63,9 @@ ol {
   background-color: #D9D9D9;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: grid;
-  grid-template-columns: 711fr 399fr;
+  grid-template-columns: 711px 399px;
   align-items: end;
   width: 1140px;
   column-gap: 30px;
@@ -76,40 +73,40 @@ ol {
 
 .content__list-container {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
 .content__card-link {
-	display: block;
-	text-decoration: none;
-	color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .content__card-link_current {
-	background-color: #545050;
+  background-color: #545050;
 }
 
 .content__card-link:hover {
-	cursor: pointer;
-	text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .content__card-link:active {
-	background-color: #545050;
+  background-color: #545050;
 }
 
 .content__card-link:focus {
-	outline: none;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
-	outline: 1px solid #fff;
+  outline: 1px solid #fff;
 }
 
 .content__list-item {
-	padding-left: 3px;
-	padding-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__details {
@@ -117,21 +114,19 @@ ol {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 20px;
 }
 
 .search-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
   gap: 40px;
 }
 
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 5px;
 }
@@ -139,7 +134,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 12px;
 }
 
 .search-form__fieldset {
@@ -150,10 +145,9 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
   letter-spacing: 0;
   background-color: transparent;
   appearance: none;
@@ -179,7 +173,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   width: 711px;
 }
 
@@ -189,9 +183,9 @@ ol {
 
 .result__video {
   width: 100%;
-  height: 100%;
+  height: 386px;
   object-fit: cover;
-  display: block;
+  object-position: center;
 }
 
 .content__list {
@@ -218,7 +212,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -231,22 +225,19 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 196px;
-  padding-top: 3px;
-  padding-bottom: 6px;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
@@ -305,10 +296,9 @@ ol {
 .button {
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
   letter-spacing: 0;
   text-align: center;
   color: #fff;
@@ -335,6 +325,7 @@ button:focus-visible {
 .search-form__submit-button {
   width: 100%;
   height: 34px;
+  align-self: flex-end;
 }
 
 .more-button {
